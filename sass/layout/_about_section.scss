@@ -1,0 +1,23 @@
+.about {
+    padding-top: 0;
+  }
+  
+  .about-item {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+  }
+
+  .about-card {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 700;
+    background-color: $color-bg-about;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    padding: 27px;
+  }

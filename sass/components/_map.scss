@@ -1,0 +1,9 @@
+.map {
+    color: $color-white;
+    transition: color $transition-duration $transition-function;
+  }
+  
+  .map:hover,
+  .map:focus {
+    color: $color-light-blue;
+  }

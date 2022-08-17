@@ -1,0 +1,14 @@
+.header {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    background:  $color-white;
+    border-bottom:  $color-head-border;
+  }
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
+  .header .logo {
+    margin-right: 93px;
+  }

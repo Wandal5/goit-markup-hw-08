@@ -1,0 +1,22 @@
+
+
+  .logo {
+    color: $color-light-blue;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    /* margin-right: 93px; */
+  }
+
+  .logo-studio {
+    color: $color-dark-grey;
+  }
+  
+  
+  .socials-icon-logo {
+    fill: $color-social-links;
+    transition: fill $transition-duration $transition-function;
+  }
+

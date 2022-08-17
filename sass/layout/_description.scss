@@ -1,0 +1,43 @@
+.description-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $color-black;
+    margin-bottom: 10px;
+  }
+  
+  .description-item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  
+  .description-icon {
+    display: flex;
+    height: 120px;
+    background-color: $color-filter-button;
+    border-radius: 4px;
+    column-gap: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .description-icon .icon {
+    height: 70px;
+    width: 70px;
+    justify-self: center;
+  }
+  
+  // // .card-set {
+  // //   display: flex;
+  // //   /* Make a flex container multiline */
+  // //   flex-wrap: wrap;
+  // //   /* Set gap between rows and columns */
+  // //   gap: 30px;
+  // //   justify-content: center;
+  // }
+
+
+// .card-set__item {
+//     flex-basis: calc((100% - 150px) / 6);
+//   }

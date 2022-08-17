@@ -1,0 +1,10 @@
+.card-set {
+    display: flex;
+    /* Make a flex container multiline */
+    flex-wrap: wrap;
+    /* Set gap between rows and columns */
+    gap: 30px;
+    justify-content: center;
+  }
+
+
