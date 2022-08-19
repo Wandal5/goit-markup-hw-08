@@ -1,6 +1,12 @@
 .about {
-    padding-top: 0;
+    // padding-top: 0;
+    @include mq(noDesk) {
+    display: none;}
+  
+
+    
   }
+  
   
   .about-item {
     flex-basis: calc((100% - 60px) / 3);

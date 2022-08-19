@@ -15,4 +15,24 @@
                 @content;
             }
         }
+        @else if $range == noDesk {
+            @media (max-width:#{$desk - 0.02}) {
+              @content;
+            }
+}
+
+// @mixin section ($padding: 60px) {
+//     padding-top: $padding;
+//     padding-bottom: $padding;
+
+//     @media screen and (min-width: 480px) {
+//         padding-top: 60px;
+//         padding-bottom: 60px;}
+    
+//     @media screen and (min-width: 1200px) {
+//         padding-top: 94px;
+//         padding-bottom: 94px;
+        
+        
+//     }
 }

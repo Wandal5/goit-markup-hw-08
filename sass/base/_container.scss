@@ -3,13 +3,26 @@
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    width: 100%;
+    // @media screen and (min-width: 480px) {
+    //   width: 480px;
+      
+    // }
+    // @media screen and (min-width: 768px) {
+    //   width: 768px;
+      
+    // }
+    // @media screen and (min-width: 1200px) {
+    //   width: 1200px;
+      
+    
     @include mq(mob){
-      width: 450px;
+      width: 480px;
     }
     @include mq(tab){
       width: 738px;
     }
-    @include mq(mob){
+    @include mq(desk){
       width: 1200px;
     }
   }

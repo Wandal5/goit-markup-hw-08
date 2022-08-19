@@ -87,10 +87,11 @@ body {
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -98,15 +99,21 @@ body {
     width: 738px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
@@ -581,8 +588,10 @@ body {
   fill: #ffffff;
 }
 
-.about {
-  padding-top: 0;
+@media (max-width: 1199.98px) {
+  .about {
+    display: none;
+  }
 }
 
 .about-item {
@@ -968,9 +977,17 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
   padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team-item {
+    --card-item: 2 ;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    --card-item: 4;
+  }
 }
 
 .team-work {
