@@ -1,7 +1,7 @@
 @mixin mq($range) {
-    $mob:480px;
-    $tab:768px;
-    $desk:1200px;
+    $mob: 480px;
+    $tab: 768px;
+    $desk: 1200px;
     @if $range == mob {
         @media screen and (min-width:$mob) {
             @content;

@@ -20,12 +20,7 @@
     // flex-basis: calc((100% - 90px) / 4);
     padding-bottom: 30px;
     // @include mq(tab)  
-    @include mq(tab) {
-      --card-item: 2
-  }
-  @include mq(desk) {
-    --card-item: 4;
-  }
+  
 }
   
   .team-work {

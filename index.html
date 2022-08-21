@@ -13,12 +13,14 @@
   <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
-<!--шапка сайта-->
-<!-- <header class="header">
+<!-- шапка сайта -->
+<header class="header">
   <div class="header__container container">
+    
     <nav class="nav">
 
       <a href="index.html" class="link logo">Web<span class="logo-studio">Studio</span></a>
+      
       <ul class="list nav__list">
 
         <li class="nav__list-item"><a href="index.html" class="nav__link link blue">Студия</a></li>
@@ -41,19 +43,30 @@
           </svg>
           096 111 11 11</a></li>
     </ul>
+    <button class="menu-btn" 
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button>
+      <svg height="40" 
+          width="40"
+          aria-label="переключатель мобильного меню">
+        <use class="icon-menu" href="./images/index_logo/symbol-defs.svg#burger-menu"></use>
+        <use class="icon-cross" href="./images/index_logo/symbol-defs.svg#menu-close"></use>
+      </svg>
+    </button> 
 
   </div>
-</header> -->
+</header>
 <main>
-  <!--главная страница-->
-<!-- 
+  <!-- главная страница -->
+
   <section class="hero">
     <div class="container">
       <h1 class="hero-title">Эфективные решения для вашего бизнесса</h1>
       <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
     </div>
-  </section> -->
-<!-- 
+  </section>
+
   <section class="description section">
     <div class="container">
       <h2 class="hidden-title">Наши особенности</h2>
@@ -100,7 +113,7 @@
         </li>
       </ul>
     </div>
-  </section> -->
+  </section>
 <!-- 
   <section class="section about">
     <div class="container">
@@ -496,8 +509,48 @@
 
   </div>
 </div> <!-- <div class="overlay-modal"></div> -->
+<div class="menu-overlay" data-menu>
+  <div class="menu-container" id="menu-container">
+    <ul class="mobile-list list">
 
+        <li class="mobile-item"><a href="index.html" class="link blue">Студия</a></li>
+
+        <li class="mobile-item"><a href="portfolio.html" class="link">Портфолио</a></li>
+
+        <li class="mobile-item"><a href="" class="link">Контакты</a></li>
+      </ul>
+    </nav>
+    <ul class="mobile-list list">
+      <li class="mobi__item"><a href="mailto:info@devstudio.com" class="link"> 
+        <!-- <svg
+            class="icon mail__icon">
+            <use href="./images/index_logo/symbol-defs.svg#icon-mailbox"></use>
+          </svg> -->
+          info@devstudio.com</a></li>
+
+      <li class="mobi__item"><a href="tel:+380961111111" class="link">
+          <!-- <svg class="icon tel__icon">
+            <use href="./images/index_logo/symbol-defs.svg#icon-smartphone"></use>
+          </svg> -->
+          096 111 11 11</a></li>
+    </ul>
+    <ul class="mobile-social__list list">
+      <li class="mob-social__item"><a href="" class="mobile-social__link link">instagram</a></li>
+      <li class="mob-social__item"><a href="" class="mobile-social__link link">twitter</a></li>
+      <li class="mob-social__item"><a href="" class="mobile-social__link link">facebook</a></li>
+      <li class="mob-social__item"><a href="" class="mobile-social__link link">linkedin</a></li>
+
+    </ul>
+  </div>
+  <button class="mobile-close-btn" type="button" data-menu-close>
+    <svg width="40" height="40"> <use href="../goit-markup-hw-08/images/index_logo/symbol-defs.svg#menu-close">
+
+    </use>
+  </svg>
+  </button>
+</div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 
 </html>
