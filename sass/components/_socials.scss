@@ -1,11 +1,10 @@
-.socials {
+& {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-  }
   
-  .socials-link {
+  &-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,20 +16,22 @@
     transition: background-color $transition-duration $transition-function;
   }
   
-  .socials-icon {
+  &-icon {
     fill: $color-social-links;
     transition: background-color $transition-duration $transition-function,
       fill $transition-duration $transition-function;
   }
   
-  .socials-link:hover,
-  .socials-link:focus,
-  .socials-link:active {
+  &-link:hover,
+  &-link:focus,
+  &-link:active {
     background-color: $color-light-blue;
   }
   
-  .socials-link:hover .socials-icon,
-  .socials-link:active .socials-icon,
-  .socials-link:focus .socials-icon {
+  &-link:hover &-icon,
+  &-link:active &-icon,
+  &-link:focus &-icon {
     fill: $color-white;
   }
+}
+  

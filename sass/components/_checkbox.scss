@@ -1,45 +1,47 @@
 .label-checkbox {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    align-content: center;
-    cursor: pointer;
-  }
-  
-  
-  
-  .checkbox:checked + .checkbox-icon {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-content: center;
+  cursor: pointer;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* position: absolute; */
+
+
+  &:checked+.checkbox-icon {
     width: 16px;
     height: 15px;
-    background-image: url(../js/img_modal/icon-check.svg) ;
+    background-image: url(../js/img_modal/icon-check.svg);
     background-color: $color-light-blue ;
     border-color: $color-light-blue ;
     background-size: contain;
   }
-  
-  .checkbox:hover + .checkbox-icon,
-  .checkbox:focus + .checkbox-icon {
+
+  &:hover+.checkbox-icon,
+  &x:focus+.checkbox-icon {
     border-color: $color-light-blue ;
-  transition: border-color $transition-duration  $transition-function ;
+    transition: border-color $transition-duration $transition-function ;
   }
-  
-  .checkbox {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  
-    /* position: absolute; */
-  }
-  
-  .checkbox-icon {
+
+
+
+  &-icon {
     display: block;
     height: 15px;
     width: 16px;
     border: 2px solid $color-dark-grey ;
     border-radius: 4px;
   }
-  .checkbox-span .blue {
+
+  &-span .blue {
     color: $color-light-blue ;
   }
+}

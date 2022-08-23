@@ -1,12 +1,12 @@
-.adress-item:hover,
-  .adress-item:focus {
+.adress-item {
+  transition: color $transition-duration $transition-function;
+
+  &-item:hover,
+  &-item:focus {
     color: $color-light-blue;
   }
-  
-  .adress-item:not(:last-child) {
+
+  &-item:not(:last-child) {
     margin-bottom: 9px;
   }
-  
-  .adress-item {
-    transition: color $transition-duration $transition-function;
-  }
+}
